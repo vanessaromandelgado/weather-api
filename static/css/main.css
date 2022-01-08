@@ -1,0 +1,42 @@
+.nav{
+  background-color: rgb(255, 255, 255);
+  color: rgb(235, 199, 199); 
+
+}
+
+body{
+  background-color: rgb(255, 255, 255);
+  background-image:url("https://images.unsplash.com/photo-1565010431002-0c91cad04dd3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1728&q=80");
+}
+
+#table_1{
+  background-color: rgba(255, 255, 255, 0.897);
+  color: rgb(121, 121, 121);
+  margin-top: 50px;
+  text-align: center;
+}
+#table_2{
+  background-color: rgba(255, 255, 255, 0.897);
+  color: rgb(121, 121, 121);
+  margin-top: 50px;
+  text-align: center;
+}
+#table_3{
+  background-color: rgb(255, 255, 255);
+  color: rgb(121, 121, 121);
+  margin-top: 50px;
+  text-align: center;
+}
+
+#table_4{
+  background-color: rgb(255, 255, 255);
+  color: rgb(121, 121, 121);
+  margin-top: 50px;
+  text-align: center;
+}
+
+#form_{
+  color: rgb(1, 24, 22);
+  margin-top: 50px;
+  margin-bottom: 50px;
+}

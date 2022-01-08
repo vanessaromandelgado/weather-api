@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Weather" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="static/css/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="static/js/main.js" defer></script>
+    <title>Weather</title>
+</head>
+
+<body>
+
+    <nav class="nav" nav-pills nav-fill>
+        <a class="nav-link" href="index.html"><h5>Weather</h5></a>
+        <a class="nav-link" href="https://www.accuweather.com/en/weather-news/"><h6>Weather News</h6></a>
+        <a class="nav-link" href="https://www.accuweather.com/en/us/severe-weather"><h6>Severe Weather</h6></a>
+        <a class="nav-link" href="https://www.accuweather.com/en/us/national/weather-radar"><h6>Weather Radar</h6></a>
+    </nav>
+
+    <div id="weather" class="row justify-content-center mt=6">
+        <div id="form_" class="col-10">
+            <section>
+                <form>
+                    <label class="city" for="city">
+                        <h6>City</h6>
+                    </label>
+                    <input type="text" class="text" placeholder="Enter city name" id="city">
+
+                    <label class="state" for="state">
+                        <h6>State</h6>
+                    </label>
+                    <input type="text" class="text" placeholder="Enter State" id="statecode">
+
+                    <label class="country" for="country">
+                        <h6>Country</h6>
+                    </label>
+                    <input type="text" class="text" placeholder="Enter Country" id="countrycode">
+                
+                    <button type="button" class="btn btn-primary" onclick=getData()><h5>Search</h5></button>
+
+                </form>
+
+        </div>
+    </div>
+
+    <div class="row justify-content-center mt=8">
+        <div class="col-3">
+            <table id="table_1" class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">High</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th id="high-0"></th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="col-2">
+            <table id="table_2" class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Low</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+
+                        <th id="low-0"></th>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+
+
+        <div class="col-3">
+            <table id="table_3" class="table">
+                <thead>
+                    <tr>
+
+                        <th scope="col">Forecast</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th id="forecast-0"></th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+        <div class="col-2">
+            <table id="table_4" class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Humidity</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th id="humidity-0"></th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        </section>
+    </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.4/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
